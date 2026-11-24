@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "archify": {
+      "command": "node",
+      "args": ["${PLUGIN_ROOT}/mcp/server.mjs", "--data-dir", "${PLUGIN_DATA}"]
+    }
+  }
+}

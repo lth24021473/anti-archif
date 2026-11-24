@@ -1,0 +1,15 @@
+{
+  "name": "archify",
+  "displayName": "Archify",
+  "version": "3.3.0",
+  "description": "Turn any idea, plan, PR, or codebase into validated interactive diagrams (10 types), one-page explainers, animated stories/videos, and source-backed Code Analysis with native Antigravity Studio side-pane viewing.",
+  "logo": "assets/logo.svg",
+  "author": "tt-a1i (Antigravity Edition)",
+  "homepage": "https://archify.si",
+  "repository": "https://github.com/tt-a1i/archify",
+  "suggestedPrompts": [
+    "Map this repository's runtime architecture with verified source citations",
+    "Run Archify Code Analysis to inspect coupling, cycles, and complexity hotspots",
+    "Create a one-page interactive explainer comparing our two architecture options"
+  ]
+}

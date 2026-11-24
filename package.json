@@ -1,0 +1,34 @@
+{
+  "name": "archify-antigravity",
+  "version": "3.3.0",
+  "private": true,
+  "description": "Antigravity-native Archify plugin & MCP App Studio: 10 validated diagram types, 4-style one-page explainers, animated stories/video, PR visual packs, and source-backed Code Analysis.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "archify": "./engine/bin/archify.mjs",
+    "archify-pr": "./engine/bin/archify-pr.mjs",
+    "archify-mcp": "./mcp/server.mjs"
+  },
+  "scripts": {
+    "build:app": "node scripts/build-mcp-app.mjs",
+    "build:viewer": "node scripts/generate-viewer.mjs",
+    "check:viewer": "node scripts/generate-viewer.mjs --check",
+    "doctor": "node engine/bin/archify.mjs doctor",
+    "mcp": "node mcp/server.mjs",
+    "install:global": "node scripts/install-antigravity.mjs --global",
+    "test": "node --test test/plugin-contract.test.mjs test/engine-parity.test.mjs test/mcp-server.test.mjs",
+    "verify": "node scripts/verify-parity.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/ext-apps": "^1.7.5",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
